@@ -118,7 +118,7 @@ const Project3 = (props: Props) => {
                                     <DetailsStack heading='collaborators' stackSpacing={2}>
                                         <HStack>
                                             <Image src={avatar} alt='my picture' height='24px' width='24px' />
-                                            <Text>Janhvi Patil</Text>
+                                            <Text>Sharook Andathodan</Text>
                                         </HStack>
                                     </DetailsStack>
                                     <DetailsStack heading='my role' stackSpacing={2}>

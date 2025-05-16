@@ -13,12 +13,12 @@ const Home: NextPage = () => {
 
         <meta property="og:url" content="https://janhvipatil.me" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Janhvi Patil" />
+        <meta property="og:title" content="Sharook Andathodan" />
         <meta property="og:description" content="personal portfolio app" />
         <meta property="og:image" content={logo} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="janhvipatil.me" />
+        {/* <meta property="twitter:domain" content="janhvipatil.me" /> */}
         <meta property="twitter:url" content="https://janhvipatil.me" />
         <meta name="twitter:title" content="Janhvi Patil" />
         <meta name="twitter:description" content="personal portfolio app" />

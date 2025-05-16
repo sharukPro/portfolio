@@ -165,8 +165,8 @@ export const Projects = () => {
                         data='This is a just for fun passion project that I have created
                             for collating my recent projects and helping my future employers/
                             prospective clients know more about me.'
-                        link='https://www.janhvipatil.me/'
-                        projectLink='https://www.janhvipatil.me/'>
+                        link='https://portfolio-sharooks-projects.vercel.app/'
+                        projectLink='https://portfolio-sharooks-projects.vercel.app/'>
                         <HStack>
                             <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                             <Text>NextJS</Text>

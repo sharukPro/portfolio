@@ -81,10 +81,10 @@ export const About = () => {
                             </Flex>
                             <VStack display={{ base: 'flex', md: 'none' }}>
                                 <HStack spacing={4}>
-                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Janhvi Patil</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Pune, India</Text></HStack>
+                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Sharook Andathodan</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Kerala, India</Text></HStack>
                                 </HStack>
-                                <HStack spacing={2}><HiOutlineMail size={'1.1em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
+                                <HStack spacing={2}><HiOutlineMail size={'1.1em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>sharookat@gmail.com</Text></HStack>
                             </VStack>
                         </Stack>
                     </Stack>
