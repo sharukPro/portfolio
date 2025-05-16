@@ -1,18 +1,19 @@
 import { Box, Flex, Heading, HStack, Icon, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import project1 from '../../assets/projects/crux-preview.png'
-import project2 from '../../assets/projects/tec-preview.png'
-import project3 from '../../assets/projects/artists-preview.png'
-import project4 from '../../assets/projects/company-preview.png'
-import project5 from '../../assets/projects/portfolio-preview.png'
-import project6 from '../../assets/projects/crux-blog-preview.png'
-import project7 from '../../assets/projects/mem-game-preview.png'
-import githubIcon from '../../assets/projects/github.png'
-import Image from 'next/image'
-import Link from 'next/link'
-import { AiFillHtml5, AiOutlineArrowRight } from 'react-icons/ai'
+import project1 from '../../assets/projects/orderbyme.png'
+import project2 from '../../assets/projects/stijlpartner.png'
+import project3 from '../../assets/projects/abitos.png'
+import project4 from '../../assets/projects/myPortfolio.png'
+// import project5 from '../../assets/projects/portfolio-preview.png'
+// import project6 from '../../assets/projects/crux-blog-preview.png'
+// import project7 from '../../assets/projects/mem-game-preview.png'
+// import githubIcon from '../../assets/projects/github.png'
+// import Image from 'next/image'
+// import Link from 'next/link'
+// import { AiFillHtml5, AiOutlineArrowRight } from 'react-icons/ai'
 import { TbBrandNextjs, TbBrandVercel, TbLetterF } from 'react-icons/tb'
-import { SiChakraui, SiCss3, SiJavascript, SiMaterialui, SiPython, SiSupabase, SiTypescript } from 'react-icons/si'
+import { FaVuejs, FaCloud } from "react-icons/fa";
+import { SiChakraui, SiLaravel, SiCss3, SiJavascript, SiMaterialui, SiPython, SiDotnet, SiSupabase, SiTypescript } from 'react-icons/si'
 import { FaBootstrap, FaReact } from 'react-icons/fa'
 import { FiFigma } from 'react-icons/fi'
 import { ProjectBox } from '../ProjectBox/ProjectBox'
@@ -33,7 +34,7 @@ export const Projects = () => {
                     fontSize={{ base: '4xl', md: '6xl' }}
                     bgGradient={headingColor}
                     bgClip='text'>Here&apos;s a few of my projects</Heading>
-                <HStack>
+                {/* <HStack>
                     <HStack>
                         <AiOutlineArrowRight />
                         <Text fontSize={{ base: 'md', md: 'lg' }}>Get the complete list at my</Text>
@@ -44,7 +45,7 @@ export const Projects = () => {
                     <Link href='https://github.com/janhvipatil' passHref>
                         <a target='_blank' ><Text fontSize={{ base: 'md', md: 'lg' }} fontWeight='semibold' _hover={{ color: 'blue.400', cursor: 'pointer' }}>Github</Text></a>
                     </Link>
-                </HStack>
+                </HStack> */}
 
                 <SimpleGrid
                     columns={1}
@@ -54,42 +55,41 @@ export const Projects = () => {
 
                     <ProjectBox
                         image={project1}
-                        heading='Fake Data Generator'
-                        data='A meta-data driven no-code tool for developers which allows them 
-                            to create dashboards/admin panels with ease. It helps you generate high 
-                            quality dummy data and validate existing data.'
-                        link='/projects/fake-data-generator'
-                        githubLink='https://github.com/nikkothari22/crux'>
+                        heading='OrderByMe (POS + Online ordering)'
+                        data='A POS web app that combines in-store table ordering and online delivery in one system.
+                        Manage dine-in orders, split bills, and track tables for staff. Order online for delivery or scan a QR code to order at their table
+                        for customers. Real-time sales tracking, inventory control, and payment processing for buisness.'
+                        link='https://www.orderbyme.com/'
+                        projectLink='https://www.orderbyme.com/'>
                         <HStack>
-                            <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
-                            <Text>NextJS</Text>
+                            <Icon as={FaVuejs} fontSize='1.2em' color='blue.300' />
+                            <Text>Vue JS</Text>
                         </HStack>
                         <HStack>
-                            <Icon as={SiSupabase} color='blue.300' />
-                            <Text>Supabase</Text>
+                            <Icon as={SiLaravel} color='blue.300' />
+                            <Text>Laravel</Text>
                         </HStack>
                         <HStack>
                             <Icon as={SiTypescript} color='blue.300' />
                             <Text>TypeScript</Text>
                         </HStack>
                         <HStack>
-                            <Icon as={TbBrandVercel} color='blue.300' />
-                            <Text>Vercel</Text>
+                            <Icon as={FaCloud} color='blue.300' />
+                            <Text>Cloud Panel</Text>
                         </HStack>
                     </ProjectBox>
 
                     <ProjectBox
                         image={project2}
-                        heading='TEC Mapping'
-                        data='The project involves mapping the electron
-                            content in the ionosphere over the South Asian region 
-                            in near-real time by using TEC data from fixed IGS stations 
-                            in India, Thailand, and Malaysia.'
-                        link='/projects/tec-mapping'
-                        projectLink='https://ppcrc.isquareit.edu.in/tec.html'>
+                        heading='StijlPartner'
+                        data='A web app that helps customers easily select and visualize interior designs for floors and window curtains.
+                        Customers can browse styles and customize colors/materials.
+                        Transform spaces with the perfect style—effortlessly!'
+                        link='https://www.stijlpartner.nl/'
+                        projectLink='https://www.stijlpartner.nl/'>
                         <HStack>
-                            <Icon as={SiPython} color='blue.300' />
-                            <Text>Python</Text>
+                            <Icon as={SiDotnet} color='blue.300' />
+                            <Text>Dot Net</Text>
                         </HStack>
                         <HStack>
                             <Icon as={SiJavascript} color='blue.300' />
@@ -107,20 +107,32 @@ export const Projects = () => {
 
                     <ProjectBox
                         image={project3}
-                        heading='Musician Booking App'
-                        data='UX case study for an artist booking app that allows
-                            users to search and filter artists in their area based on genre,
-                            language, rating and more. Users can be assured of their bookings by calling/ messaging 
-                            the band and signing an agreement.'
-                        link='/projects/artist-booking-app'
-                        projectLink='https://www.figma.com/community/file/1168219277592520636'>
+                        heading='Abitos Sportswear'
+                        data='A POS + E-commerce web app designed for sportswear shops, combining seamless in-store and online sales.
+                        Browse & order sportswear online for delivery or in-store pickup for customers.
+                        Process payments, manage inventory, and track sales in real-time for staff.
+                        Boost sales & streamline shopping—anywhere, anytime!'
+                        link='https://abitossportswear.ae/'
+                        projectLink='https://abitossportswear.ae/'>
                         <HStack>
-                            <Icon as={FiFigma} fontSize='1.2em' color='blue.300' />
-                            <Text>Figma</Text>
+                            <Icon as={FaVuejs} fontSize='1.2em' color='blue.300' />
+                            <Text>Vue JS</Text>
+                        </HStack>
+                        <HStack>
+                            <Icon as={SiTypescript} color='blue.300' />
+                            <Text>TypeScript</Text>
+                        </HStack>
+                        <HStack>
+                            <Icon as={SiLaravel} color='blue.300' />
+                            <Text>Laravel</Text>
+                        </HStack>
+                        <HStack>
+                            <Icon as={FaCloud} color='blue.300' />
+                            <Text>AAPanel</Text>
                         </HStack>
                     </ProjectBox>
 
-                    <ProjectBox
+                    {/* <ProjectBox
                         image={project5}
                         heading='Portfolio Website'
                         data='This is a just for fun passion project that I have created
@@ -145,31 +157,35 @@ export const Projects = () => {
                             <Icon as={TbBrandVercel} color='blue.300' />
                             <Text>Vercel</Text>
                         </HStack>
-                    </ProjectBox>
+                    </ProjectBox> */}
 
                     <ProjectBox
                         image={project4}
-                        heading='My Asset Buddy Website'
-                        data='My Asset Buddy is a SaaS product for enterprises to create
-                            and manage industrial asset data. Here, I worked on creating a website for them
-                            so that their clients can easily go through their services.'
-                        link='/projects/company-website'
-                        projectLink='https://www.myassetbuddy.in/'>
+                        heading='Portfolio Website'
+                        data='This is a just for fun passion project that I have created
+                            for collating my recent projects and helping my future employers/
+                            prospective clients know more about me.'
+                        link='https://www.janhvipatil.me/'
+                        projectLink='https://www.janhvipatil.me/'>
                         <HStack>
-                            <Icon as={TbLetterF} color='blue.300' />
-                            <Text>Frappe</Text>
+                            <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
+                            <Text>NextJS</Text>
                         </HStack>
                         <HStack>
-                            <Icon as={FaBootstrap} color='blue.300' />
-                            <Text>Bootstrap</Text>
+                            <Icon as={SiChakraui} color='blue.300' />
+                            <Text>Chakra UI</Text>
                         </HStack>
                         <HStack>
-                            <Icon as={SiCss3} color='blue.300' />
-                            <Text>CSS</Text>
+                            <Icon as={SiTypescript} color='blue.300' />
+                            <Text>TypeScript</Text>
+                        </HStack>
+                        <HStack>
+                            <Icon as={TbBrandVercel} color='blue.300' />
+                            <Text>Vercel</Text>
                         </HStack>
                     </ProjectBox>
 
-                    <ProjectBox
+                    {/* <ProjectBox
                         image={project6}
                         heading='Blog Starter Template'
                         data='I have used Sanity IO headless CMS, NextJS and Chakra UI to 
@@ -193,9 +209,9 @@ export const Projects = () => {
                             <Icon as={TbBrandVercel} color='blue.300' />
                             <Text>Vercel</Text>
                         </HStack>
-                    </ProjectBox>
+                    </ProjectBox> */}
 
-                    <ProjectBox
+                    {/* <ProjectBox
                         image={project7}
                         heading='Memory Game using JS'
                         data='The game has a grid of cards,
@@ -221,7 +237,7 @@ export const Projects = () => {
                             <Icon as={TbBrandVercel} color='blue.300' />
                             <Text>Vercel</Text>
                         </HStack>
-                    </ProjectBox>
+                    </ProjectBox> */}
 
                 </SimpleGrid>
             </Stack>

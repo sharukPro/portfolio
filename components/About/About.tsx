@@ -3,9 +3,9 @@ import React from 'react'
 import { MdOutlineAlternateEmail } from 'react-icons/md'
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import Image from 'next/image'
-import workspaceLight from '../../assets/about/workspace-light.jpg'
+import workspaceLight from '../../assets/about/sharuWorkspace.png'
 import workspaceDark from '../../assets/about/workspace-dark.jpg'
-import avatar from '../../assets/about/avatar.png'
+import avatar from '../../assets/about/avatar.jpeg'
 import arrowDark from '../../assets/curved-arrow-dark.png'
 import arrowLight from '../../assets/curved-arrow-light.png'
 import styles from '../../styles/CustomStyles.module.css'
@@ -28,8 +28,7 @@ export const About = () => {
                     <Stack spacing={{ base: 2, md: 6 }}>
                         <Box display={{ base: 'none', md: 'block' }}>
                             <CustomHeading headingText='Software Developer' boxColor='yellow.100' chars={8.5} />
-                            <CustomHeading headingText='Product Engineer' boxColor='pink.100' chars={7.5} />
-                            <CustomHeading headingText='UI/ UX Designer' boxColor='blue.100' chars={7.5} />
+                            <CustomHeading headingText='ERP Consultant' boxColor='pink.100' chars={7.5} />
                         </Box>
                         <Flex
                             textAlign={'center'}
@@ -39,12 +38,11 @@ export const About = () => {
                             display={{ base: 'block', md: 'none' }}
                             w="100%">
                             <CustomHeading headingText='Software Developer' boxColor='yellow.100' chars={8.5} />
-                            <CustomHeading headingText='Product Engineer' boxColor='pink.100' chars={7.5} />
-                            <CustomHeading headingText='UI/UX Designer' boxColor='blue.100' chars={7.5} />
+                            <CustomHeading headingText='ERP Consultant' boxColor='pink.100' chars={7.5} />
                         </Flex>
                         <Stack spacing={4} py={6} display={{ base: 'flex', md: 'none' }}>
                             <Center>
-                                <Image src={avatar} alt='my picture' height='180px' width='180px' />
+                                <Image src={avatar} alt='my picture' height='180px' width='180px' style={{ borderRadius: '50%' }} />
                             </Center>
                             <Center px={4} textAlign='center'>
                                 <Text className={styles.customFont}>
@@ -56,10 +54,10 @@ export const About = () => {
                             <Stack spacing={{ base: 4, md: 4 }} width={{ base: '100%', md: '70%' }}>
                                 <Stack spacing={2} pt={{ base: 10, md: 0 }}>
                                     <Text as='p'>
-                                        Hi, I am <strong>Janhvi</strong>, a full-stack software developer who wants to build products that make a difference.
+                                        Hi, I am <strong>Sharook</strong>, a full-stack software developer who wants to build products that make a difference.
                                         My top skills lie within front-end web app development and my go-to tech stack includes
-                                        TypeScript, React, Frappe, Python, SQL, HTML & CSS.
-                                        I&apos;m a lifelong learner (currently taking a few courses on UI/UX) and love to read,
+                                        TypeScript, React, Frappe, Python, SQL, HTML & CSS. Back-end techs under my belt includes PHP, Laravel and Dot Net.
+                                        I&apos;m a lifelong learner and love to read,
                                         travel and explore new places and cultures.
                                     </Text>
                                 </Stack>
@@ -69,18 +67,16 @@ export const About = () => {
                                     My calling - Turning ideas into <strong>products</strong></Heading>
                                 <Stack spacing={0}>
                                     <Text as='p'>
-                                        I graduated with a Bachelor of Engineering in Electronics and Telecommunications
-                                        from International Institute of Information Technology, Pune - with a
-                                        first class with distinction, class rank - 3rd, and multiple awards under my belt including
-                                        the Dr. L H Hiranandani Award for &apos;Best Girl Student&apos;
+                                        I graduated with a Bachelor of Engineering in Computer Science and Technology
+                                        from KMCT College of Engineering, Calicut, India - with distinction, class rank - 3rd.
                                     </Text>
                                 </Stack>
                             </Stack>
                             <Flex width={{ md: '60%' }} display={{ base: 'none', md: 'flex' }}>
                                 <SimpleGrid columns={{ md: 2 }} spacing={2}>
-                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Janhvi Patil</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Pune, India</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineMail size={'1.1em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
+                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Sharook Andathodan</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Kerala, India</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineMail size={'1.1em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>sharookat@gmail.com</Text></HStack>
                                 </SimpleGrid>
                             </Flex>
                             <VStack display={{ base: 'flex', md: 'none' }}>
@@ -94,7 +90,7 @@ export const About = () => {
                     </Stack>
                     <Stack spacing={10} display={{ base: 'none', md: 'flex' }}>
                         <Box pt='50px'>
-                            <Image src={avatar} alt='my picture' height='150px' width='150px' />
+                            <Image src={avatar} alt='my picture' height='150px' width='150px' style={{ borderRadius: '50%' }} />
                         </Box>
                         <Box className={styles.tiltBox} width='250px'>
                             <Text className={styles.customFont}>
@@ -115,7 +111,7 @@ export const About = () => {
                 pb={{ base: 12, md: 24 }}
                 direction={{ base: 'column', md: 'row' }}>
                 <Box style={{ borderRadius: '10px', overflow: 'hidden' }} w={{ base: '100%', md: '70%' }}>
-                    <Image src={workspace}
+                    <Image src={workspaceLight}
                         alt='my workspace'
                         objectFit='cover' />
                 </Box>
@@ -124,15 +120,14 @@ export const About = () => {
                         <Heading bgGradient='linear(to-r, pink.200, blue.200)'
                             bgClip='text'>This is where the magic happens</Heading>
                         <Text as='p'>
-                            I&apos;m someone who has enjoyed building beautiful things almost all my life, what started
-                            as me having an interest in sketching and painting, soon grew into me exploring
-                            digital art and then trickled into web development and design. One of my first projects was when I created
-                            a music library of all my favorite songs with custom label covers on my local machine in 8th grade.
-                            (This predated Spotify and Apple music and was kinda shady considering I obtained
-                            those songs from a pendrive shared by a friend)
+                            As an enthusiastic and diligent software engineer, I thrive in dynamic environments
+                            that challenge my adaptability and foster continuous learning. My experience across diverse
+                            projects has honed my ability to collaborate effectively within teams and take initiative when
+                            necessary. I am committed to delivering high-quality solutions and am always eager to
+                            acquire new skills to drive both personal and organizational growth.
                         </Text>
                         <Text as='p'>
-                            What I did not know then was that my skills as an artist and developer combined with my
+                            What I did not know then was that my skills as a developer combined with my
                             love for communicating would be the perfect recipe for my career in tech.
                         </Text>
                         <Text as='p'>

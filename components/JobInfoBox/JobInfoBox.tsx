@@ -69,14 +69,8 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                                     </Text>
                                 }
                             </Stack>
-                            {companyName === 'My Asset Buddy' ?
-                                <MyAssetBuddyTechStack /> : null
-                            }
-                            {companyName === 'MedBuyer' ?
-                                <MedBuyerTechStack /> : null
-                            }
-                            {companyName === 'NICE Interactive Solutions India' ?
-                                <NiceTechStack /> : null
+                            {companyName === 'Emeron Infospace' ?
+                                <MyAssetBuddyTechStack /> : <MedBuyerTechStack />
                             }
                         </Stack>
                     </GridItem>
@@ -124,8 +118,8 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                             }
                         </Stack>
                         <Box>
-                            {companyName === 'My Asset Buddy' ?
-                                <MyAssetBuddyTechStack /> : <NiceTechStack />
+                            {companyName === 'Emeron Infospace' ?
+                                <MyAssetBuddyTechStack /> : <MedBuyerTechStack />
                             }
                         </Box>
                     </Stack>

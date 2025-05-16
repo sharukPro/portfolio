@@ -32,7 +32,7 @@ export const Contact = () => {
                             </Center>
                             <Stack spacing={0}>
                                 <Text>Mail me at:</Text>
-                                <Link href='mailto:janhvipatil716@gmail.com' color='blue.500' fontWeight='medium'>janhvipatil716@gmail.com</Link>
+                                <Link href='mailto:sharookat@gmail.com' color='blue.500' fontWeight='medium'>sharookat@gmail.com</Link>
                             </Stack>
                         </HStack>
                         <Stack display={{ base: 'none', md: 'flex' }}>
@@ -54,20 +54,14 @@ export const Contact = () => {
                             fontSize='lg'
                             variant='ghost'>
                             <HStack spacing={2}>
-                                <Link isExternal href='https://www.instagram.com/janhvi.patill/'>
+                                <Link isExternal href='https://www.instagram.com/sharu__ykza/'>
                                     <IconButton aria-label='Instagram' icon={<AiFillInstagram fontSize="1.5rem" />} />
                                 </Link>
-                                <Link isExternal href='https://www.linkedin.com/in/janhvipatil/'>
+                                <Link isExternal href='https://www.linkedin.com/in/sharook-at-620872211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>
                                     <IconButton aria-label='Linkedin' icon={<AiFillLinkedin fontSize="1.5rem" />} />
                                 </Link>
-                                <Link isExternal href='https://twitter.com/janhvipatil_'>
-                                    <IconButton aria-label='Twitter' icon={<AiOutlineTwitter fontSize="1.5rem" />} />
-                                </Link>
-                                <Link isExternal href='https://github.com/janhvipatil'>
+                                <Link isExternal href='https://github.com/sharukPro'>
                                     <IconButton aria-label='Github' icon={<AiFillGithub fontSize="1.5rem" />} />
-                                </Link>
-                                <Link isExternal href='https://www.goodreads.com/user/show/19382307'>
-                                    <IconButton aria-label='Goodreads' icon={<SiGoodreads fontSize="1.2rem" />} />
                                 </Link>
                             </HStack>
                         </ButtonGroup>

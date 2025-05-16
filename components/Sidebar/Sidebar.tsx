@@ -22,11 +22,9 @@ export const Sidebar = () => {
                 pos='absolute'
                 variant='ghost'>
                 <Stack spacing={6}>
-                    <IconButton aria-label='Github' icon={<AiFillGithub fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://github.com/janhvipatil' />
-                    <IconButton aria-label='Linkedin' icon={<AiFillLinkedin fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://www.linkedin.com/in/janhvipatil/' />
-                    <IconButton aria-label='Twitter' icon={<AiOutlineTwitter fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://twitter.com/janhvipatil_' />
-                    <IconButton aria-label='Instagram' icon={<AiFillInstagram fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://www.instagram.com/janhvi.patill/' />
-                    <IconButton aria-label='Goodreads' icon={<SiGoodreads fontSize="1.4rem" />} rounded='xl' as={Link} isExternal href='https://www.goodreads.com/user/show/19382307' />
+                    <IconButton aria-label='Github' icon={<AiFillGithub fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://github.com/sharukPro' />
+                    <IconButton aria-label='Linkedin' icon={<AiFillLinkedin fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://www.linkedin.com/in/sharook-at-620872211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' />
+                    <IconButton aria-label='Instagram' icon={<AiFillInstagram fontSize="1.5rem" />} rounded='xl' as={Link} isExternal href='https://www.instagram.com/sharu__ykza/' />
                 </Stack>
             </ButtonGroup>
             <Box

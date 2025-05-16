@@ -5,21 +5,24 @@ import typescript from '../../assets/tech logos/typescript.png'
 import javascript from '../../assets/tech logos/javascript.png'
 import react from '../../assets/tech logos/react.png'
 import nextjs from '../../assets/tech logos/nextjs.png'
+import vuejs from '../../assets/tech logos/vue.png'
+import laravel from '../../assets/tech logos/laravel.png'
+import dotnet from '../../assets/tech logos/dotnet.webp'
 import aws from '../../assets/tech logos/aws.png'
 import python from '../../assets/tech logos/python.png'
 import frappe from '../../assets/tech logos/frappe.jpeg'
 import postman from '../../assets/tech logos/postman.png'
 import opsgenie from '../../assets/tech logos/opsgenie.png'
 import git from '../../assets/tech logos/git.png'
-import jira from '../../assets/tech logos/jira.png'
+// import jira from '../../assets/tech logos/jira.png'
 import linear from '../../assets/tech logos/linear.png'
 import html from '../../assets/tech logos/html5.png'
 import css from '../../assets/tech logos/css.png'
 import supabase from '../../assets/tech logos/supabase.png'
 import mongodb from '../../assets/tech logos/mongodb.png'
 import firebase from '../../assets/tech logos/firebase.png'
-import chakra from '../../assets/tech logos/chakra.png'
-import bitbucket from '../../assets/tech logos/bitbucket.png'
+// import chakra from '../../assets/tech logos/chakra.png'
+// import bitbucket from '../../assets/tech logos/bitbucket.png'
 import bash from '../../assets/tech logos/bash.png'
 import redis from '../../assets/tech logos/redis.png'
 import Image, { StaticImageData } from 'next/image'
@@ -68,13 +71,13 @@ export const TechStack = () => {
 const myassetbuddyTechStack: TechStack[] = [
     { logo: typescript, label: 'TypeScript' },
     { logo: react, label: 'React' },
-    { logo: aws, label: 'AWS' },
+    { logo: nextjs, label: 'NextJS' },
+    { logo: vuejs, label: 'VueJS' },
+    { logo: laravel, label: 'Laravel' },
     { logo: frappe, label: 'Frappe' },
     { logo: python, label: 'Python' },
     { logo: postman, label: 'Postman' },
     { logo: git, label: 'Git' },
-    { logo: firebase, label: 'Firebase' },
-    { logo: redis, label: 'Redis' },
     { logo: mongodb, label: 'MongoDB' }
 ]
 
@@ -129,10 +132,11 @@ export const NiceTechStack = () => {
 const medBuyerTechStack: TechStack[] = [
     { logo: typescript, label: 'TypeScript' },
     { logo: react, label: 'React' },
-    { logo: firebase, label: 'Firebase' },
-    { logo: chakra, label: 'Chakra UI' },
-    { logo: jira, label: 'Jira' },
-    { logo: bitbucket, label: 'Bitbucket' }
+    { logo: nextjs, label: 'NextJS' },
+    { logo: vuejs, label: 'VueJS' },
+    { logo: postman, label: 'Postman' },
+    { logo: git, label: 'Git' },
+    { logo: dotnet, label: 'Dot Net' },
 ]
 
 export const MedBuyerTechStack = () => {

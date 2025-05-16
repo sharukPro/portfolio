@@ -119,6 +119,19 @@ export const Navbar = () => {
                                 <Link href='#contact' passHref>
                                     <Button onClick={onClose} as='a' variant='ghost'>Contact</Button>
                                 </Link>
+                                <Flex justifyContent='center' width='full'>
+                                    <HStack spacing={8} alignItems='center'>
+                                        <a href='sharu-cv.pdf' download='sharu-cv.pdf'>
+                                            <Button
+                                                rightIcon={<HiDownload fontSize='1em' />}
+                                                variant='outline'
+                                                colorScheme='blue'
+                                                size='md'>
+                                                Resume
+                                            </Button>
+                                        </a>
+                                    </HStack>
+                                </Flex>
                             </Stack>
                         </Box>
                     ) : null}
@@ -136,7 +149,7 @@ export const Navbar = () => {
                                 </NavLink>
                             ))}
                         </HStack>
-                        <a href='Janhvi-Patil-CV.pdf' download='Janhvi-Patil-CV.pdf'>
+                        <a href='sharu-cv.pdf' download='sharu-cv.pdf'>
                             <Button
                                 rightIcon={<HiDownload fontSize='1em' />}
                                 variant='outline'

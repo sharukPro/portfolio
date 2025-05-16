@@ -15,7 +15,7 @@ export const Footer = () => {
                         <HStack spacing={1}>
                             <Logo height={20} width={20} />
                             <Text fontSize='xs' color='subtle'>
-                                &copy; {new Date().getFullYear()} Janhvi Patil
+                                &copy; 2025 Sharook Andathodan
                             </Text>
                         </HStack>
                         <HStack spacing={1}>
@@ -32,7 +32,7 @@ export const Footer = () => {
                 <HStack px='0.5'>
                     <Logo height={30} width={30} />
                     <Text fontSize='sm' color='subtle'>
-                        &copy; 2022 Janhvi Patil
+                        &copy; 2025 Sharook Andathodan
                     </Text>
                 </HStack>
                 <HStack spacing={2}>
