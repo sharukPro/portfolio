@@ -11,15 +11,15 @@ const Home: NextPage = () => {
         <title>Sharook Andathodan</title>
         <meta name="description" content="personal portfolio app" />
 
-        <meta property="og:url" content="https://janhvipatil.me" />
+        <meta property="og:url" content="https://portfolio-sharooks-projects.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Sharook Andathodan" />
         <meta property="og:description" content="personal portfolio app" />
         <meta property="og:image" content={logo} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="janhvipatil.me" />
-        <meta property="twitter:url" content="https://janhvipatil.me" />
+        <meta property="twitter:domain" content="portfolio-sharooks-projects.vercel.app/" />
+        <meta property="twitter:url" content="https://portfolio-sharooks-projects.vercel.app/" />
         <meta name="twitter:title" content="Sharook Andathodan" />
         <meta name="twitter:description" content="personal portfolio app" />
         <meta name="twitter:image" content={logo} />
