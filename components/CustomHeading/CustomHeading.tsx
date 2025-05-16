@@ -21,7 +21,7 @@ export const CustomHeading = ({ headingText, boxColor, chars }: Props) => {
                     fontWeight={'bold'}
                     fontSize={{ base: '28px', md: '36px' }} >{words.map((w, index) => {
                         if (index === words.length - 1) {
-                            return <Text as='span' color={color}>
+                            return <Text as='span' color={color} key={index}>
                                 {w}
                             </Text>
                         } else {

@@ -13,7 +13,7 @@ import project4 from '../../assets/projects/myPortfolio.png'
 // import { AiFillHtml5, AiOutlineArrowRight } from 'react-icons/ai'
 import { TbBrandNextjs, TbBrandVercel, TbLetterF } from 'react-icons/tb'
 import { FaVuejs, FaCloud } from "react-icons/fa";
-import { SiChakraui, SiLaravel, SiCss3, SiJavascript, SiMaterialui, SiPython, SiDotnet, SiSupabase, SiTypescript } from 'react-icons/si'
+import { SiChakraui, SiLaravel, SiCss3, SiJavascript, SiPython, SiDotnet, SiSupabase, SiTypescript } from 'react-icons/si'
 import { FaBootstrap, FaReact } from 'react-icons/fa'
 import { FiFigma } from 'react-icons/fi'
 import { ProjectBox } from '../ProjectBox/ProjectBox'
@@ -100,8 +100,8 @@ export const Projects = () => {
                             <Text>React</Text>
                         </HStack>
                         <HStack>
-                            <Icon as={SiMaterialui} color='blue.300' />
-                            <Text>Material UI</Text>
+                            <Icon as={SiChakraui} color='blue.300' />
+                            <Text>Chakra UI</Text>
                         </HStack>
                     </ProjectBox>
 
